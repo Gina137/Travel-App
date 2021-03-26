@@ -3,7 +3,8 @@
 This project builds out a travel app that obtains a desired departure location , trip location & date from the user, and displays weather of this location and an image of the location using information obtained from three external APIs 
 
 
-#Used APIs
+# Used APIs
+
 * [Geonames](hhttp://www.geonames.org/export/web-services.html) - This was used to get the longitude, latitude, country code and country name.
 * [Weatherbit](https://www.weatherbit.io/account/create) - This is used to get weather details using the longitude and latitude gotten from Geonames API.
 * [Pixabay](https://pixabay.com/api/docs/) - This is used to get an image of the destination city.
