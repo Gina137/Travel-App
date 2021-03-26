@@ -1,0 +1,65 @@
+body
+{
+    background: center / cover no-repeat url(../image/travel.jpg) fixed;
+}
+.container
+{
+
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6em 40em 1.9em ;
+    grid-template-areas: 
+    "top top"
+    "mn mn"
+    "ft ft"
+    ;
+}
+.header
+{
+    grid-area: top;
+}
+.main
+{
+    grid-area: mn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 168, 230);
+    width: 43em;
+    height: 20em;
+    border-radius: 25%;
+    margin: auto;
+}
+#content
+{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button
+{
+    width: 12em;
+    height: 5em;
+    border-radius: 25%;
+    background-color: rgb(252, 115, 190);
+}
+button:hover
+{
+    background-color: rgb(216, 3, 120);
+}
+.footer
+{
+    grid-area: ft;
+}
+.foot
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.3em;
+}

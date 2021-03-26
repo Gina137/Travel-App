@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App</title>
+        <script src="https://kit.fontawesome.com/292eabbb53.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- part1 -->
+        <div class="container" id='firstdiv'>
+            <div class="header"></div>
+            <div class="main" >
+                <div id="content">
+                <h1><strong>Time To Travel</strong></h1>
+                <p><mark><q>Travel opens your heart, broadens your mind and fills your life with stories to tell.</q></mark></p>
+           <button id="addButton"><strong>+ Add a Trip</strong></button>
+            </div>
+            </div>
+        <!-- part2 -->
+        <div class="container" id="seconddiv">
+            <div class="header"></div>
+            <div class="addingmain" >
+                <div id="content">
+                    <img src="../src/client/image/earth.png" class="addingavatar">
+                    <h2><ins>Plan your Trip</ins></h2>
+                <form>
+                    <p>Name: <input type="text" id="TravelerName" placeholder="Name"></p>
+                  <p>Leaving From: <input id="departure" type="text" placeholder="leaving from"></p>  
+                  <p>Heading To: <input id="loc" type="text" placeholder="Heading To"></p>  
+                  <p>Departing On...</p>
+                  <input type="date" id="Date">
+                </form>
+                <br>
+                <div id="buttonsoptions">
+                    <button id="save"><strong>Save Trip</strong></button> 
+                </div>
+            </div>
+            </div>
+        <!-- part3 -->
+        <div class="container" id="thirddiv">
+            <div class="header"></div>
+            <div class="result" >
+                <div id="content">
+                    <img src="../src/client/image/earth.png" id="resultavatar">
+                    <h2><ins> your Trip</ins></h2>
+                <form id="resultform">
+                 <i class="fas fa-user"></i><p id="Name"> Name: </p>
+                 <i class=" fas fa-plane"></i><p id="leaving"> Leaving From: </p>
+                 <i class="fas fa-map-marker-alt"></i><p id="location"> Location: </p>  
+                 <i class="fas fa-calendar-alt"></i><p id="date"> Date: </p>  
+                 <i class="fas fa-cloud-sun-rain"></i><p id="temp">Expected weather : </p>  
+                </form> 
+
+                <div id="buttonsoptions">
+                    <button id="anotherTrip"><strong> + Add Another Trip</strong></button> 
+                    <button id="reservehotel"><strong> + Reserve a Hotel</strong></button> 
+                    <button id="removeTrip"><strong> - Remove My Trip</strong></button>
+                </div>
+            </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="foot">
+                    <p>All rights reserved ©</p>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+
+.addingmain
+{
+    grid-area: mn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 168, 230);
+    border-radius: 40%;
+    width: 47em;
+    height: 35em;
+    margin: auto;
+}
+.addingavatar
+{
+    border-radius: 50%;
+    width:3em ;
+    height: 3em;
+    vertical-align: middle;
+}
+
+
